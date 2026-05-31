@@ -1,0 +1,29 @@
+{
+  "skills": [
+    {
+      "name": "JavaScript",
+      "proficiency": "Advanced",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "Node.js",
+      "proficiency": "Advanced",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+      "name": "React",
+      "proficiency": "Intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+      "name": "MongoDB",
+      "proficiency": "Intermediate",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "name": "Python",
+      "proficiency": "Beginner",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    }
+  ]
+}
