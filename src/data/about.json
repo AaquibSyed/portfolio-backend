@@ -1,0 +1,42 @@
+{
+  "summary": "Experienced software developer with strong skills in backend development, REST APIs, and cloud integration. Passionate about building scalable and efficient applications.",
+
+  "experience": [
+    {
+      "companyName": "Tech Solutions Pvt Ltd",
+      "role": "Software Developer",
+      "duration": "Jan 2022 - Present"
+    },
+    {
+      "companyName": "Innovate Labs",
+      "role": "Junior Developer",
+      "duration": "Jun 2020 - Dec 2021"
+    }
+  ],
+
+  "education": [
+    {
+      "instituteName": "XYZ University",
+      "degree": "B.Tech in Computer Science",
+      "duration": "2016 - 2020"
+    },
+    {
+      "instituteName": "ABC Junior College",
+      "degree": "Higher Secondary Education",
+      "duration": "2014 - 2016"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "E-commerce API",
+      "description": "Built a RESTful API for an online shopping platform with authentication and payment integration.",
+      "link": "https://github.com/example/ecommerce-api"
+    },
+    {
+      "name": "Task Manager App",
+      "description": "Developed a full-stack task management application with real-time updates and user collaboration.",
+      "link": "https://github.com/example/task-manager"
+    }
+  ]
+}
