@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { saveContact } from "../services/contact.service.ts";
+import { saveContact } from "../services/contact.service";
 
 export const createContact = (req: Request, res: Response) => {
   const { name, email, phone, message } = req.body || {};

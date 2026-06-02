@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getSkills } from "../controllers/skills.controller.ts";
+import { getSkills } from "../controllers/skills.controller";
 
 const router = Router();
 

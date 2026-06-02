@@ -1,3 +1,3 @@
-import aboutData from "../data/about.json" with { type: "json" };
+import aboutData from "../data/about.json";
 
 export const getAboutData = () => aboutData;

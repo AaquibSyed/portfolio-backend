@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { getAboutData } from "../services/about.service.ts";
+import { getAboutData } from "../services/about.service";
 
 export const getAbout = (req: Request, res: Response) => {
   const data = getAboutData();

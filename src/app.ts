@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
 
-import aboutRoutes from "../src/routes/about.routes.ts";
-import skillsRoutes from "../src/routes/skills.route.ts";
-import contactRoutes from "../src/routes/contact.routes.ts";
+import aboutRoutes from "./routes/about.routes";
+import skillsRoutes from "./routes/skills.route";
+import contactRoutes from "./routes/contact.routes";
 
 const PORT = process.env.PORT || 3000;
 
@@ -14,6 +14,10 @@ app.use(express.json());
 app.use("/api/about", aboutRoutes);
 app.use("/api/skills", skillsRoutes);
 app.use("/api/contact", contactRoutes);
+
+app.get("/", (_, res) => {
+  res.send("Portfolio API running");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on PORT: ${PORT}`);

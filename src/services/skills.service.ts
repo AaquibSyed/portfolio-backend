@@ -1,3 +1,3 @@
-import skillsData from "../data/skills.json" with { type: "json" };
+import skillsData from "../data/skills.json";
 
 export const getSkillsData = () => skillsData;
