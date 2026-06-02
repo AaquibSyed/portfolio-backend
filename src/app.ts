@@ -5,7 +5,7 @@ import aboutRoutes from "../src/routes/about.routes.ts";
 import skillsRoutes from "../src/routes/skills.route.ts";
 import contactRoutes from "../src/routes/contact.routes.ts";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(cors());
