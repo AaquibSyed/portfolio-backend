@@ -4,6 +4,7 @@ import cors from "cors";
 import aboutRoutes from "./routes/about.routes";
 import skillsRoutes from "./routes/skills.route";
 import contactRoutes from "./routes/contact.routes";
+import myContactsRoutes from "./routes/myContact.routes";
 
 const PORT = process.env.PORT || 3000;
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use("/api/about", aboutRoutes);
 app.use("/api/skills", skillsRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/myContacts", myContactsRoutes);
 
 app.get("/", (_, res) => {
   res.send("Portfolio API running");

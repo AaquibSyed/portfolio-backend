@@ -12,5 +12,12 @@
     "phone": "1233334444",
     "message": "hi there lets connect",
     "createdAt": "2026-06-02T07:23:41.479Z"
+  },
+  {
+    "name": "Nisha",
+    "email": "Nisha@gmail.com",
+    "phone": "8971670433",
+    "message": "hi aariz",
+    "createdAt": "2026-06-02T10:07:06.937Z"
   }
 ]
