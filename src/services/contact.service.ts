@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { publishContactCreated } from "./pubsub.service";
 
 const contactsFilePath = path.join(
   process.cwd(),
@@ -8,13 +9,12 @@ const contactsFilePath = path.join(
   "contacts.json",
 );
 
-export const saveContact = (
+export const saveContact = async (
   name: string,
   email: string,
   phone: string,
   message: string,
 ) => {
-  console.log("constact filr path", contactsFilePath);
   const fileData = fs.readFileSync(contactsFilePath, "utf8");
 
   const contacts = JSON.parse(fileData);
@@ -29,12 +29,11 @@ export const saveContact = (
 
   fs.writeFileSync(contactsFilePath, JSON.stringify(contacts, null, 2));
 
-  console.log({
-    name,
-    email,
-    phone,
-    message,
-  });
+  try {
+    await publishContactCreated({ name, email, phone, message });
+  } catch (error) {
+    console.error("failed to publish pub/sub event");
+  }
 
   return true;
 };
